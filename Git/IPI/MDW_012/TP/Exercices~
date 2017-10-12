@@ -1,0 +1,8 @@
+
+Exercice 1: Ecrire porgramme qui calcule le double d'un entier.
+
+Programme exo1
+	  lire(a)
+	  a<-a*2
+	  afficher(a)
+Fin
