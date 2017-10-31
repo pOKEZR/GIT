@@ -1,6 +1,5 @@
 
-La chose importante à savoir avant le début consiste en ce que notre serpent est formé par une chaîne d'éléments (les carrés) et que le mouvement est permis en en déplaçant le dernier carré du corps de serpent au devant. 
-Ce projet est aussi builded l'utilisation des dessins de module pour la structure codée. 
+La chose importante à savoir avant le début consiste en ce que notre serpent est formé par une chaîne d'éléments (les carrés) et que le mouvement est permis en en déplaçant le dernier carré du corps de serpent au devant.
 
 ## Istructions : 
 1. Créez l'élément de toile en notre HTML. 
