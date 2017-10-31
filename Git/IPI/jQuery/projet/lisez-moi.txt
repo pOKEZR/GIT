@@ -1,0 +1,55 @@
+
+La chose importante à savoir avant le début consiste en ce que notre serpent est formé par une chaîne d'éléments (les carrés) et que le mouvement est permis en en déplaçant le dernier carré du corps de serpent au devant. 
+Ce projet est aussi builded l'utilisation des dessins de module pour la structure codée. 
+
+## Istructions : 
+1. Créez l'élément de toile en notre HTML. 
+2. Tirez le corps du serpent et de la nourriture en utilisant canvas. 
+3. Créez la structure du serpent et de la nourriture. 
+4. Créez une fonction de _checkCollision_ pour découvrir si le serpent s'est touché. 
+5. Créez la fonction principale qui doit diriger tout que nous avons besoin de jouer. 
+6. Utilisez l'événement _keyCode_ pour déplacer le serpent en utilisant le clavier.
+
+
+## le serpent 
+
+### Comment attirent le serpent canvas : 
+
+
+```js
+var bodySnake = function(x, y) {
+        //This is the single square
+        ctx.fillStyle = 'green';
+        ctx.fillRect(x*snakeSize, y*snakeSize, snakeSize, snakeSize);
+        //This is the border of the square
+        ctx.strokeStyle = 'darkgreen';
+        ctx.strokeRect(x*snakeSize, y*snakeSize, snakeSize, snakeSize);
+    }
+
+### La structure du serpent : 
+```js
+var drawSnake = function() {
+        //Initially the body of the snake will be formed by 5 squares.
+        var length = 4;
+        snake = [];
+        
+        //Using a for loop we push the 5 elements inside the array(squares).
+        //Every element will have x = 0 and the y will take the value of the index.
+        for (var i = length; i>=0; i--) {
+        snake.push({x:i, y:0});
+          }  
+        }
+### Le mouvement du serpent :
+
+```js
+var snakeX = snake[0].x;
+var snakeY = snake[0].y;
+
+    if(direction == 'right') { 
+      snakeX++; 
+    } else if (direction == 'left') { 
+      snakeX--; 
+    } else if (direction == 'up') { 
+      snakeY--; 
+    } else if (direction == 'down') { 
+      snakeY++; }
