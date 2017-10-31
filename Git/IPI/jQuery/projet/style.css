@@ -28,15 +28,7 @@
     button:disabled {
       background-color: grey;
     }
-
-    p {
-      font-family: Helvetica;
-      font-weight: bold;
-      width: 250px;
-      margin: 18px 0 5px 8px;
-      float: left;
-    }
-
+    
     .game {
       margin: 0 auto;
     }
