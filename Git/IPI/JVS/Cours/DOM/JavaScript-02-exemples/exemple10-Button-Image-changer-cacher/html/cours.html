@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="cours.css">
+    <title>Les styles avec JavaScript</title>
+</head>
+
+<body>
+	<h1>Test de changement d'images</h1>
+
+	<div>
+		<img class="illustration" id="image1" src="../images/img1.jpg" height="200" />
+		<img class="illustration" id="image2" src="../images/img2.jpg" height="200" onclick="this.style.display='none'"/>
+		cliquer sur la deuxième image pour la faire disparaitre
+	</div>
+	<button onclick="changerImage();">changer d'image</button>
+	<button onclick="afficherImage();">afficher l'image cachée</button>
+	
+    <script src="../js/cours.js"></script>
+</body>
+</html>

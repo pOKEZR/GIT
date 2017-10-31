@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<title>jQuery</title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</head>
+	<body>
+		<p>TEST</p>
+		<div id="cercle"></div><br/>
+		<div id="carre"></div><br/>
+		<div id="carre"></div><br/>
+		<p id="para">We Are U'DEVists</p>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				/*$("#cercle").click(function(){ // QUAND ON CLIQUE SUR LE CERCLE
+				$("#para").html("We Are U'DEVists And We Are The Best !");//Change le contenu du paragraphe qui a pour id="para".
+				("#para").hide();//Cache le contenu du paragraphe qui a pour id="para".
+				$("iframe").attr("src","http://www.lefigaro.fr"); //Rajouter un iframe
+				$("#cercle").css({"width":"500px", //Créer un cercle
+										"height":"500px",
+										"background-color":"red",});
+				alert("BONJOUR"); //JavaScript. Affiche une alerte
+
+				//Pour changer le style du site 
+				$("#circle").click(function(){
+				$("#circle").css("background-color","red");
+									});
+				alert($("#circle").css("background-color"));
+				alert($("body").css("width"));	
+				});
+
+				$("div").click(function(){ // Faire disparaitre chaque éléments lorsqu'on clique dessus.
+					//$(this).hide(); //Pour cacher les élément 1 par 1
+					//$(this).css("display","none"); Un autre moyen
+					$(this).fadeOut("slow");
+				});*/
+
+				//ANIMER LE CONTENU
+				$("#cercle").click(function(){
+				   var cer = $("#cercle");
+			    cer.animate({width: '500px', height: '500px',left: '250px'}, "slow");
+				}); 
+			});			
+		</script>
+
+		<!--<iframe src="http://www.lemonde.fr" width="1000" height="600" frameborder="0" scrolling="yes" marginheight="0" marginheight="0"></iframe>-->
+	</body>
+</html>

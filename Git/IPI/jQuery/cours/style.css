@@ -1,0 +1,17 @@
+#cercle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: green;
+    position: relative;
+}
+
+#carre {
+    height: 30px;
+    width: 30px;
+    background: red;
+    /*-ms-transform: rotate(45deg); /* Internet Explorer */
+    /*-moz-transform: rotate(45deg); /* Firefox */
+    /*-webkit-transform: rotate(45deg); /* Safari et Chrome */
+    /*-o-transform: rotate(45deg); /* Opera */
+}

@@ -1,0 +1,40 @@
+<DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>DOM</title>
+		<style>
+			#largeur {
+			    text-align: right;
+			} 
+		</style>
+	</head>
+	
+	<body onload="myFunction()" onresize="myFunction()">
+		<h4 id="largeur"></h4>
+		<h1>Titre</h1>
+		<p>Contenu </p>
+
+		<!-- pour afficher la taile de l'éran -->
+		<script>
+		function myFunction() {
+		    var largeur=window.innerWidth;
+		    var taille='';
+		    if(largeur<768){
+		    	taille='smartphone - xs';
+		    } 
+		    else if(largeur<992){
+		    	taille='tablette - sm';
+		    } 
+		    else if(largeur<1200){
+		    	taille='ordinateur portable - md';
+		    } 
+		    else { 
+		    	taille='ecran fixe - lg';  
+		    }     
+		    document.getElementById("largeur").innerHTML = taille + " : " + largeur;
+		}
+		</script>
+	</body>
+	
+</html>

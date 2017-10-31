@@ -1,0 +1,39 @@
+<DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Changements de contenus</title>
+</head>
+
+<body>
+	<ol>
+		<li><img 
+			id="image" src="../images/img1.jpg" alt="leftovers" width="70" 
+			onmouseover="
+				this.src='../images/img2.jpg';this.width='150';this.alt='fargo'
+			" 
+			onmouseout="
+				this.src='../images/img1.jpg';this.width='150';this.alt='leftovers'
+			"
+		></li>
+
+		<li><span 
+			onclick="
+				this.innerHTML='Vous êtes sur <b>Fargo</b>. <u>Double cliquez sur du texte non marqué</u> pour passer sur : <i>The Leftovers</i>';
+				document.getElementById('image').src='../images/img2.jpg';
+			" 
+			ondblclick="
+				this.innerHTML='Vous êtes sur <b>The Leftovers</b>. <u>Cliquez où vous voulez sur le texte</u> pour passer sur : <i>Fargo</i>';
+				document.getElementById('image').src='../images/img1.jpg';
+			"  
+		>
+			Vous êtes sur <b>The Leftovers</b>. <u>Cliquez ou vous voulez sur le texte</u> pour passer sur : <i>Fargo</i>
+		</span></li>
+		<li>
+			L'image change quand on passe dessus avec la souris.<br>
+			Il faut modifier le code pour que l'image corresponde toujours au texte.
+		</li>
+	</ol>
+</body>
+</html>
+
